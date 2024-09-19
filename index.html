@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Static LinkedIn page with HTML And CSS">
+    <meta name="keywords" content="HTML, CSS">
+    <title>LinkedIn Page</title>
+    <link rel="stylesheet" href="./stylesheets/bodystyle.css">
+    <link rel="stylesheet" href="./stylesheets/nav.css">
+    <link rel="stylesheet" href="./stylesheets/leftcard.css">
+    <link rel="stylesheet" href="./stylesheets/middlecard.css">
+    <link rel="stylesheet" href="./stylesheets/rightcard.css">
+    <link rel="stylesheet" href="./stylesheets/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--Favicon tag-->
+    <link rel="icon" href="./Assets/logo/favicon.png">
+</head>
+<body>
+    <!--Navbar-->
+    <nav>
+        <div class="fixing">
+            <img class="nav-logo" src="./Assets/logo/LinkedIn-logo.png" alt="LinkedIn-Logo">
+        </div>
+        <div onclick="openSearch()" class="fixing">
+            <i class="fa-solid fa-magnifying-glass" id="magnifying-glass"></i>
+            <input type="text" placeholder="Search" id="input-search">
+        </div>
+        <div>
+        <span class="nav-links">
+            <a title="home" id="home">
+                <img src="./Assets/icons/Home.svg" alt="Home-icon">
+                <span class="nav-icon-name">Home</span> 
+            </a>
+            <a title="Network" id="network">
+                <img src="./Assets/icons/Connections.svg" alt="Network-icon">
+                <span class="nav-icon-name">My Network</span>  
+            </a>
+            <a title="Jobs" id="jobs">
+                <img src="./Assets/icons/Jobs.png" alt="Jobs-icon">
+                <span class="nav-icon-name">Jobs</span>
+            </a>
+            <a title="Messaging" id="messaging">
+                <img src="./Assets/icons/Messaging.svg" alt="Messaging-icon">
+                <span class="nav-icon-name">Messaging</span>
+            </a>
+            <a title="Notifications" id="notifications">
+                <img src="./Assets/icons/Notifications.png" alt="Notifications-icon">
+                <span class="nav-icon-name">Notifications</span>
+            </a>
+            <a id="profile" title="Me">
+                <img src="./Assets/icons/girl.png" alt="Profile-icon">
+                <span class="nav-icon-name">Me▾</span>
+            </a>
+
+            <div id="divider"></div>
+           
+            <a title="Business">
+                <img src="./Assets/icons/Post-a_job.svg" alt="Post a Job-icon">
+                <span class="nav-icon-name">For Business▾</span>
+            </a>
+            <!--Premium Link-->
+            <a id="profile" title="Premium" class="premium-link" href="https://www.linkedin.com/premium/products/?family=LEARNING&upsellOrderOrigin=premium_nav_upsell_text&intentType=DEVELOP_SKILLS&utype=learning&referenceId=X4hdUX1QR0md6rGmtGJjSw%3D%3D&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fnutan-patil-64a29922b%2F">
+                <img src="./Assets/icons/premium.png" alt="Premium-icon">
+                <span>Try Premium for ₹0</span>
+            </a>
+         </span>
+        </div>
+    </nav>
+
+    <main>
+        <!--Left side section-->
+        <section class="side-section">
+            <!--Left side section: First container of profile section-->
+            <div class="profile-container">
+                <div class="background-shape">
+                <img src="./Assets/icons/Pic.png" alt="Profile" class="profile-image"> 
+                    <a id="me" class="card" href="https://www.linkedin.com/in/nutan-patil64a29922b/"><strong>Nutan Patil</strong></a><br>
+                    <p class="card">Shri sant gadge baba college of <br>engineering and technology,<br> Bhusawal</p><br>
+                    <p class="card1">Bhusawal, Maharashtra</p>
+                </div>
+           </div>
+
+        <!--Left side section: Second container of Viewers and Connections section-->
+
+           <div>
+            <span class="viewers">
+                <p class="viewers-text">Profile viewers</p>
+                <p class="viewers-link1">45</p>
+            </span><br>
+            
+            <span class="viewers">
+                <p class="viewers-text">Connections <br><strong>Grow your connections</strong></p>
+                <p class="viewers-link1">150</p>
+            </span>
+        </div>
+        
+         <!--Left side section: Third container of Premium benefits section--> 
+        <div class="rejoin">
+            <p>Unlock exclusive hiring tools with Recruiter Lite</p>
+            <a href="#" title="Join Now" class="rejoin-link">
+                <img src="./Assets/icons/premium.png" alt="Premium" id="premium-img">
+                <span id="rejoin-link">Rejoin Now</span>
+            </a>
+            
+            <div class="divider"><div></div></div>
+            
+            <div class="saved" id="my-items">
+                <img src="./Assets/icons/bookmark.png" alt="Saved" id="saved-img">
+                <span>Saved items</span>
+            </div>
+        </div>
+        
+        <!--Left side section: Four container of Links section--> 
+           
+        <div class="bottom" id="my-topics">
+            <div id="links">
+                <div> <a href="#" class="link-name"> Groups </a> </div>
+                <div>
+                    <a href="#" class="link-name"> Events </a>
+                    <a id="plus"><strong>+</strong></a>
+                </div>
+                <div> <a href="#" class="link-name"> Followed Hashtags </a> </div>
+            </div>
+            <div id="discover"> Discover more </div>
+        </div>
+    </section>
+
+     <!--Middle section-->
+
+        <section class="middle-section">
+
+          <!--Middle side section: First container of Create Post section-->
+
+            <div class="create-post" id="post-section">
+                <div id="write-post">
+                        <img src="./Assets/icons/Pic.png" alt="Profile" title="Nutan patil">
+                        <input type="text" name="_textarea" id="text-area" placeholder="Start a post, try writing with AI">
+                </div>
+            <!--attachments to post Media, Event or to write article-->
+                 <div id="attachments">
+                    <div id="Photo">
+                       <img src="./Assets/icons/media.png" alt="Media-icon">
+                       <span>Media</span>
+                    </div>
+                    <div id="Event">
+                     <img src="./Assets/icons/event.png" alt="Event-icon">
+                     <span>Event</span>
+                    </div>
+                    <div id="article">
+                        <img src="./Assets/icons/article.png" alt="Article-icon">
+                        <span> Write article</span>
+                    </div>
+                </div>
+            </div>
+
+               <!--Divider to sort options-->
+            <div id="sort-option">
+                <div id="horizontal-divider"></div>
+                <div id="sort-by"> Sort by:</div>
+                <div id="sort-type"> Top ▾</div>
+            </div>
+
+             <!--Middle side section: Second container of Post image section(Post-1)-->
+             <div class="post" id="post-1">
+                <!--Username-logo, username, user followers and posted date-->
+                   <div class="user" style="height: 3.75;">
+                    <div>
+                    <img id="user-img" src="./Assets/logo/AWS logo.png" alt="AWS-logo">
+                    </div>
+                  <div class="user-info">
+                    <div class="username">Amazon Web Services (AWS)</div>
+                    <div class="user-followers">9,576,220 followers</div>
+                    <div class="posted-ago">
+                        <span>promoted &nbsp;<strong>.&nbsp</strong></span>
+                        <span><img src="./Assets/icons/globe.svg" alt="globe"></span>
+                    </div>
+                  </div>
+                     <div>
+                        <span><img src="./Assets/icons/three-dots.svg" alt="info" id="info-dots"></span>
+                     </div>
+            </div>
+           
+           <!--Description of Post-->
+
+            <div class="description">
+                We’re excited that <span class="hashtag">Stability AI’s</span> best, and most powerful text-to-image models are now in Amazon Bedrock, and 
+                <span class="hashtag">Amazon Web Services (AWS)</span> is the first cloud provider to make these models available to customers. <br><br>
+                They promise to speed the creative process and are a leap forward in generating high-quality, photorealistic images in seconds—saving time and giving an edge in reacting quickly to market trends. <br><br>
+                We know these capabilities are important to customers, and we’re happy they can start creating with these exceptional models today
+                 <a id="post-1-link" href="https://lnkd.in/gEkVhYfg">https://lnkd.in/gEkVhYfg</a>
+            </div>
+ 
+             <!--Post the image-->
+
+            <div id="post-pics">
+                <img style="margin: 0; padding: 0;" id="Postpic-1" src="./Assets/Pictures/Post-1.png" alt="Amazon Web Services (AWS) post">
+            </div>     
+
+             <!--Post likes, comments and reposts numbers-->
+
+            <div id="reactions">
+                <!--Views, Likes, Comments and Reposts-->
+                   <p>views</p>
+                   <div class="reaction-number">
+                       <div class="reaction-number">3,333</div>
+                       <div class="comments-reposts">
+                       <div class="comments">46 comments</div>
+                      <div class="reposts"><strong>&nbsp;.&nbsp;</strong>345 reposts</div>
+                       </div>
+                   </div>
+            </div>
+
+             <!--Divider-->
+            <div id="divider-2"><div></div></div>
+
+           <!--Reaction buttons for post image-->
+
+          <div id="reaction-button">
+            <!--Like-->
+            <div>
+                <img src="./Assets/icons/like.svg" alt="Like">&nbsp;
+                <span>Like</span>
+            </div>
+            <!--Comment-->
+            <div>
+                <img src="./Assets/icons/comment.svg" alt="Comment">&nbsp;
+                <span>Comment</span>
+            </div>
+            <!--Repost-->
+            <div>
+                <img src="./Assets/icons/repost.svg" alt="Repost">&nbsp;
+                <span>Repost</span>
+            </div>
+            <!--Send-->
+            <div>
+                <img src="./Assets/icons/share.svg" alt="Send">&nbsp;
+                <span>Send</span>
+            </div>
+          </div>
+     </div>
+
+       <!--Middle side section: Third container of Post Video section(Post-1)-->
+            
+            <div class="post2" id="post-2">
+              <!--Username-logo, username, user followers and posted date-->
+               <div class="user">
+                <div>
+                    <img id="user-img" src="./Assets/logo/meta.png" alt="Meta-logo">
+                </div>
+                <div class="user-info">
+                    <div class="username">AI at Meta</div>
+                    <div class="user-followers"> 865,472 followers </div>
+                    <div class="posted-ago">
+                        <span>1mo &nbsp;<strong>.&nbsp;</strong></span>
+                        <span><img src="./Assets/icons/globe.svg" alt="globe"></span>
+                    </div>
+               </div> 
+               <div>
+                <span><img src="./Assets/icons/three-dots.svg" alt="info" id="info-dots"></span>
+               </div>
+            </div>
+
+            <!--Description of Post-->
+
+            <div class="description">
+                <span class="hashtag">Artificial Intelligence (AI)</span> is a transformative technology that enables machines to mimic human intelligence,
+                 making decisions, recognizing patterns, and learning from data. <br><br>
+                It powers innovations in various industries, from healthcare to finance, driving automation and efficiency. <br><br>
+                <span class="hashtag">#ArtificialIntelligence</span> &nbsp; 
+                <span class="hashtag">#MachineLearning</span> &nbsp;
+                 <span class="hashtag">#TechInnovation</span> &nbsp;
+                 <span class="hashtag">#Automation</span>
+            </div>
+
+            <!--Post the Video-->
+           <div id="post-video">
+            <video style="margin: 0; padding: 0;" id="Postvid-2" src="./Assets/Pictures/Post-2.mp4" controls>
+            </video>
+           </div>
+
+            <!--Post likes, comments and reposts numbers-->
+
+           <div id="reactions">
+
+             <!--Views, Likes, Comments and Reposts-->
+            <p>views</p>
+            <div class="reaction-number">
+                <div class="reaction-number">60,310</div>
+                <div class="comments-reposts">
+                <div class="comments post2-reaction">631 comments</div>
+               <div class="reposts post2-reaction"><strong>&nbsp;.&nbsp;</strong>31 reposts</div>
+                </div>
+                </div>
+            </div>
+   
+      <!--Divider-->
+        <div id="divider-2"> <div></div></div>
+
+         <!--Reaction buttons for post image--> 
+
+           <div id="reaction-button">
+            <!--Like-->
+        <div>
+            <img src="./Assets/icons/like.svg" alt="Like">&nbsp;
+            <span>Like</span>
+        </div>
+        <!--Comment-->
+        <div>
+            <img src="./Assets/icons/comment.svg" alt="Comment">&nbsp;
+            <span>Comment</span>
+        </div>
+        <!--Repost-->
+        <div>
+            <img src="./Assets/icons/repost.svg" alt="Repost">&nbsp;
+            <span>Repost</span>
+        </div>
+        <!--Send-->
+        <div>
+            <img src="./Assets/icons/share.svg" alt="Send">&nbsp;
+            <span>Send</span>
+        </div>
+      </div>
+    </div>
+ </section>
+
+       <!--Right Side section-->
+        <section class="side-section" id="last-section">
+
+          <!--Right side section: First container of News section-->
+
+                <div>
+                  <span class="learn-more">
+                     <h3>LinkedIn News</h3>
+                     <a title="These are the day’s top professional news stories and conversations. Learn more about how they’re selected.">
+                     <img id="i-tag" src="./Assets/icons/letter-i.png" alt="Learn  More">
+                     </a>
+                  </span><br>
+
+                  <!--Right Side Section: Top Stories of News section-->
+                  <p class="heading-news"><strong>Top Stories</strong></p><br>
+                  <div class="news">
+                     <p>Is MBA a must for entrepreneurs?</p>
+                     <p class="news-date">4d ago <strong>.</strong> 10,119 readers</p>
+                  </div><br>
+                  <div class="news">
+                     <p>Smaller cities go to premium way</p>
+                     <p class="news-date">2d ago <strong> . </strong>  2,224 readers</p>
+                  </div><br>
+                  <div class="news">
+                     <p>Carmakers drive up discounts</p>
+                     <p class="news-date">2d ago <strong> . </strong>  1393 readers</p>
+                  </div><br>
+                  <div class="news">
+                     <p>NXP Semiconductors to hire 6,000</p>
+                     <p class="news-date">3d ago <strong> . </strong>  22,708 readers</p>
+                  </div><br>
+                  <div class="news">
+                     <p>Using tech for social impact</p>
+                     <p class="news-date">4d ago <strong> . </strong>  3,373 readers</p>
+                  </div><br>
+
+                  <!--Show more news section-->
+                  <p class="heading-news"> Show more 
+                     <select name="▼" class="downword-more" style=" color: rgb(73, 73, 73);">
+                  </select> 
+                 </p>
+             </div>
+
+        <!--Right side section: First container of Games option section-->
+             
+           <div>
+            <p style="color:rgb(73, 73, 73);"><strong>Today's games</strong></p><br>
+            <div class="game-img">
+               <img src="./Assets/icons/Queens.png" alt="Queens-Game">
+               <a class="game-info" href="https://www.linkedin.com/games/queens/">Queens</a>
+               <p class="game-info1">Crown each region</p>
+            </div>
+            <div class="game-img">
+               <img src="./Assets/icons/Pinpoint.png" alt="Pinpoint-Game">
+               <a class="game-info" href="https://www.linkedin.com/games/pinpoint/">Pinpoint</a>
+               <p class="game-info1">Guess the category</p>
+            </div>
+            <div class="game-img">
+               <img src="./Assets/icons/Crossclimb.png" alt="Crossclimb-Game">
+               <a class="game-info" href="https://www.linkedin.com/games/crossclimb/">Crossclimb</a>
+               <p class="game-info1">Unlock a trivia ladder</p>
+            </div>
+         </div>
+
+         <!--Right side section: First container of Company Follows section-->
+
+           <div id="company-follow">
+              <div id="company-news">
+                <span style="color: #000000e6; margin-bottom: 0.7rem;"><strong>Add to your feed</strong></span>
+                <img src="./Assets/icons/letter-i.png" alt=" More follow options" id="i-tag">
+              </div>
+
+        <!--first company section-->
+              <div class="companies">
+                <div>
+                    <img src="./Assets/logo/Microsoft.png" alt="Microsoft Logo" class="company-img">
+                </div>
+                <div>
+                    <div class="company-name"> Microsoft</div>
+                    <div class="company-role"> Software Development</div> 
+                    <div class="company-followers">23M Followers</div>
+                </div>
+            </div>
+           <!--follow button section-->
+           <div class="follow-button-container">
+             <button class="follow-button">
+                <div>
+                    <span> + Follow </span>
+                </div>
+             </button>
+           </div>
+ 
+           <!--Divider-->
+           <div id="company-divider"> <div></div> </div>
+           
+        <!--second company section-->
+           <div class="companies">
+            <div>
+                <img src="./Assets/logo/google.png" alt="Google Logo" class="company-img">
+            </div>
+            <div>
+                <div class="company-name">Google</div>
+                <div class="company-role">Software development</div>
+                <div class="company-followers">34M Followers</div>
+            </div>
+           </div>
+           <!--follow button section-->
+            <div class="follow-button-container">
+                <button class="follow-button">
+                   <div>
+                       <span>+ Follow </span>
+                   </div>
+                </button>
+            </div>
+
+            <!--Divider-->
+            <div id="company-divider"> <div></div> </div>
+      
+             <!--Third company section-->
+            <div class="companies">
+                <div>
+                    <img src="./Assets/logo/apple.png" alt="Apple Logo" class="company-img">
+                </div>
+                <div>
+                    <div class="company-name">Apple</div>
+                    <div class="company-role">Computers and Electronics Manufacturing</div>
+                    <div class="company-followers">18M Followers</div>
+                </div>
+           </div>
+            <!--follow button section-->
+            <div class="follow-button-container">
+               <button class="follow-button">
+               <div>
+                   <span>+ Follow </span>
+               </div>
+              </button>
+           </div>
+
+           <!--Divider-->
+           <div id="company-divider"> <div></div> </div>
+
+            <!--Fourth company section-->
+           <div class="companies">
+            <div>
+                <img src="./Assets/logo/meta.png" alt="Meta Logo" class="company-img">
+            </div>
+            <div>
+                <div class="company-name">Meta</div>
+                <div class="company-role">software Development</div>
+                <div class="company-followers">11M Followers</div>
+            </div>
+        </div>
+        <!--follow button section-->
+        <div class="follow-button-container">
+           <button class="follow-button">
+           <div>
+               <span>+ Follow </span>
+           </div>
+          </button>
+       </div>
+
+       <!--Divider-->
+       <div id="company-divider"> <div></div> </div>
+
+        <!--Fifth company section-->
+       <div class="companies">
+        <div>
+            <img src="./Assets/logo/netflix.png" alt="Netflix Logo" class="company-img">
+        </div>
+        <div>
+            <div class="company-name">Netflix</div>
+            <div class="company-role"> Entertainment Providers</div>
+            <div class="company-followers">11M Followers</div>
+        </div>
+       </div>
+       <!--follow button section-->
+       <div class="follow-button-container">
+        <button class="follow-button">
+        <div>
+            <span>+ Follow </span>
+        </div>
+       </button>
+    </div>
+
+    <!--Divider-->
+    <div id="company-divider"> <div></div> </div>
+
+    <!--Sixth company section-->
+    <div class="companies">
+        <div>
+            <img src="./Assets/logo/spotify.png" alt="Spotify Logo" class="company-img">
+        </div>
+        <div>
+            <div class="company-name">Spotify</div>
+            <div class="company-role">Musicians</div>
+            <div class="company-followers">4M Followers</div>
+        </div>
+    </div>
+    <!--follow button section-->
+    <div class="follow-button-container">
+        <button class="follow-button">
+        <div>
+            <span>+ Follow </span>
+        </div>
+       </button>
+    </div>
+</div>
+
+              <!--Right Side Section: Last Container of more options for user help and also app download link-->  
+
+           <div id="right-bottom">
+            <div class="right-section">
+                <span class="active">About</span>
+                <span class="active">Accessibility</span>
+                <span class="active">Help Center</span>
+            </div><br>
+            <div class="right-section">
+                <span class="active">Privacy & Terms ▾</span>
+                <span class="active">Ad Choices</span>
+            </div><br>
+            <div class="right-section">
+                <span class="active">Advertising</span>
+                <span class="active">Business Services ▾</span>
+            </div><br>
+            <div class="right-section">
+                <span>
+                 <a href="https://play.google.com/store/apps/details?id=com.linkedin.android&hl=en_IN" id="app-download">
+                    Get the LinkedIn App
+                 </a></span>
+                 <span class="active">More</span>
+                </div>
+                <div class="right-section" id="footer-part">
+                   <span>
+                    <img src="./Assets/logo/logo-rightbottom.png" alt="LinkedIn-Logo" id="bottom-logo"></span>
+                <footer id="footer">
+           <span>LinkedIn Corporation © 2024</span>
+          </footer>
+        </div>
+    </div>
+        </section>
+    </main>
+</body>
+</html>

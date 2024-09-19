@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f4f2ee;
+    font-family: "Sans", sans-serif;
+}
+
+main{
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.side-section{
+    width: 20%;
+}
+
+.middle-section{
+    width: 35%;
+}
+
+.side-section > div{
+    padding: 0.8rem;
+}
+
+.middle-section > div, .side-section > div {
+    background-color: white;
+    margin: 0.5rem;
+    border-radius: 0.3rem;
+}

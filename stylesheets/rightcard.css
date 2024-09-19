@@ -1,0 +1,223 @@
+/*Right Section Cascades*/
+
+
+/*News Section*/
+.side-section> div > span > h3{
+    cursor: pointer;
+}
+
+.heading-news{
+    color: #000000bf;
+}
+
+.news{
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.news-date{
+    color: #00000099; 
+    font-size:0.9rem;
+    margin: 0;
+    padding: 0;
+}
+
+.news-date:hover{
+    color: black;
+}
+
+.news:hover{
+    cursor: pointer;
+    background: whitesmoke;
+    color: black;
+    width: 100%;
+}
+
+.link{
+    display: inline-block;
+}
+
+.learn-more{
+    font-weight: normal;
+}
+
+.link, .learn-more{
+    display: flex;
+    flex-direction: row;
+}
+
+#i-tag{
+    height:1.1rem;
+    width:1.1rem;
+    position: absolute;
+    left: 92%;
+}
+
+.downword-more{
+    border: none;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+/*Games Section*/
+
+
+.game, .game-img img{
+    height: 3rem;
+    width: 3rem;
+}
+
+.game-img img{
+    float: left;
+}
+
+.game-info{
+    margin-left: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.game-info:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #0a66c2;
+    filter: brightness(105%);
+}
+
+.game-info1{
+    color: #000000bf; 
+    font-size:0.9rem;
+    position: relative;  
+    left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/*Company follow Options Section*/
+
+.companies, .follow-button-container, #company-divider{
+    display: flex;
+    align-items: center;
+}
+
+.companies {
+    margin-top: 0.5rem;
+}
+
+.company-img{
+    width: 3rem;
+    margin: 0 0.5rem;
+}
+
+.company-name {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.company-name:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0a66c2;
+}
+
+.company-role {
+    margin: 0.25rem 0;
+}
+
+.company-followers, .company-role {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000bf;
+}
+
+.follow-button-container {
+    justify-content: center;
+}
+
+.follow-button:hover{
+    background-color: #d0e7ff;
+}
+
+.follow-button {
+    border: 2px solid #0a66c2;
+    background: whitesmoke;
+    border-radius: 120px;
+    padding: 0.25rem 3rem;
+    margin: 0.5rem auto;
+    cursor: pointer;
+}
+
+.follow-button > div > span {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #0a66c2;
+}
+
+/*Company Dividers*/
+
+#company-divider {
+    justify-content: center;
+    margin: 0.25rem 0;
+}
+
+#company-divider > div {
+    flex-basis: 16rem;
+    height: 1px;
+    background: #0000001a;
+}
+
+/*Bottom Links for user and to download linkedin*/
+
+#right-bottom, .right-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#right-bottom{
+    background-color: transparent;
+    flex-direction: column;
+}
+
+#bottom-logo{
+    width: 5em;
+    height: 5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.right-section{
+    flex-direction: row;
+    gap: 1rem;
+    color: #000000bf;  
+    font-size: 0.7rem;
+}
+
+#app-download{
+    text-decoration: none;
+    color:#000000bf;
+}
+
+#app-download:hover{
+    color: #0a66c2;
+    text-decoration: underline;
+    filter: brightness(110%);
+    cursor: pointer;
+}
+
+.active:hover{
+    color: #0a66c2;
+    text-decoration: underline;
+    filter: brightness(110%);
+    cursor: pointer;
+}
+
+#footer{
+    color:#000000e6;
+    font-size: 0.8rem;
+}
+
+#footer-part{
+    display: flex;
+    gap: 0;
+    filter: opacity(150%);
+}
